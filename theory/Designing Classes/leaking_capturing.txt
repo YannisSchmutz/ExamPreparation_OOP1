@@ -1,0 +1,19 @@
+Leaking
+* Leaking occurs when method returns a reference to an internal object
+* E.g:
+    - Get a reference to a BankAccount object form the bank and directly withdraw money without the bank noticing.
+
+*  Solution:
+  - Make internal object immutable or
+  - Return a reference to a copy (clone) of the internal object
+
+
+Capturing:
+* Aliasing -> Two (e.g) classes got the reference to the same object
+* Capturing occurs when e.g a BankAccount is created in the main method and its reference is passed to the Bank.
+  So the Bank got one reference to the Account as well as it still exists one in Main.
+* The caller may still hold a reference to the object and is able to change it by bypassing the bank.
+* Solution:
+  - Make internal object immutable or
+  - Make a copy (clone) of the object and use copy as internal object. (Create a new reference to a new object, which is
+    different to the one the caller holds.)

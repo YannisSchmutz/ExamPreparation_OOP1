@@ -39,6 +39,7 @@ public class Lists {
         System.out.println(list);
 
         System.out.println("Is list empty?: " + list.isEmpty());  // Check if list is empty
+        // System.out.println(list.get(0));  // This would throw a java.lang.IndexOutOfBoundsException
     }
 
     public static void searchForElement(){

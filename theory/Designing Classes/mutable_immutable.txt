@@ -1,0 +1,20 @@
+
+Immutable:
+* String (always creates a new reference to a new object after change)
+* Integer
+* Byte
+* Long
+* Short
+* Boolean
+*
+* Classes with no setter methods e.g
+
+
+Mutable:
+* List
+* Date
+* Classes with setter methods e.g
+
+* StringBuffer
+    StringBuffer str = new StringBuffer("Good");
+    str.append(" Morning");

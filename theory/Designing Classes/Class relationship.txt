@@ -1,0 +1,20 @@
+Inheritance
+* Is-a relationship
+* Car is a Vehicle
+
+Aggregation
+* Has-a relationship
+* Car has a tire
+* Related to "Composition"
+* aggregation can “live” independently
+    - A Tire can exist with even without a Car
+
+Composition
+* composition cannot “live” independently
+    - A Room cannot exist without a House
+
+Dependency
+* Uses relationship
+* weaker than aggregation
+* Example: many of our applications depend on the Scanner class to read input
+

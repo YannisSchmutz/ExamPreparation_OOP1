@@ -1,0 +1,18 @@
+* Instance variables:
+    - belong to concrete objects (instances)
+    - Stay alive until no method uses the objects any longer, then the object gets collected
+      by the garbage collector.
+
+* Local variables:
+    - belong to blocks (methods, loops, etc.)
+    - Must be explicitly initialized
+    - Stay alive as long as the block is executed
+
+* Parameter variables:
+    - belong to methods
+    - Explicit parameters are initialized with the passed arguments
+    - The implicit parameter this refers to the object on which the method is invoked ▶ Stay alive as long as the method/constructor is executed
+
+* Static (class) variables:
+    - belong to classes
+    - Often final & public
