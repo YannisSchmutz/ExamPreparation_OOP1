@@ -1,0 +1,33 @@
+* Subclass can NOT access PRIVATE instances of superclass (only trough getter methods)
+*
+*
+
+* Often you need to call the overridden method in the superclass.
+* Use the super keyword to call the super method.
+public class CheckingAccount extends BankAccount { private int transactionCount;
+...
+    public void deposit(double amount) {
+      transactionCount++;
+      // Calls overridden method in the superclass
+      // BankAccount::deposit()
+      super.deposit(amount);
+}
+... }
+
+
+* For from outside world (c is instance of Class C)
+    * Field x in Class C: c.x
+    * Field x in Class B: ((B)c).x
+    * Field x in Class A: ((A)c).x
+
+
+
+* Overloading / Overwriting
+    * Call "other" (overloaded) constructor in same class by:
+        this(x,y);
+    * Call constructor of super-class:
+        super(x, y);
+        - must be the first statement in the constructor!
+        - If the superclass-constructor is not called by the subclass, Java implicitly calls the no-argument
+          constructor of the superclass at the beginning of the current constructor
+

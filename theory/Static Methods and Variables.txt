@@ -15,4 +15,4 @@
 
 * Static (class) variables:
     - belong to classes
-    - Often final & public
+    - They should be declared private, except for static constants (final), which may be either private or public.

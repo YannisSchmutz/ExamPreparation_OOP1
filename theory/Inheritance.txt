@@ -1,0 +1,23 @@
+
+
+* The STATIC type of an object variable (reference) is declared type of the object variable. ▶
+    - The static type is known at compile-time by the compiler.
+    - It is static, because it does cannot change.
+    - E.g:
+        BankAccount anAccount;
+
+* The DYNAMIC type of an object variable is the type of the object it is currently pointing to.
+    - The dynamic type is, in general, not known at compile-time.
+    - It is dynamic, it can change at runtime.
+    - E.g:
+        anAccount = new SavingsAccount();  // Initialized as BankAccount before...
+
+* Whether a method can be invoked is determined by the static type!
+
+
+
+* From a FINAL class can't be inherited.
+    - Immutable ones should be final
+* FINAL methods can't be overwritten
+    - Methods which are called in the constructor should be final.
+
