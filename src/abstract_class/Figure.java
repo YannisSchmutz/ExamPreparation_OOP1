@@ -34,5 +34,9 @@ public abstract class Figure {
     public final int getPosY() {
         return yPos;
     }
+
+    public static void test(){
+        System.out.println("Figure test");
+    }
 }
 
