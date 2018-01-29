@@ -11,7 +11,8 @@
 * Parameter variables:
     - belong to methods
     - Explicit parameters are initialized with the passed arguments
-    - The implicit parameter this refers to the object on which the method is invoked ▶ Stay alive as long as the method/constructor is executed
+    - The implicit parameter this refers to the object on which the method is invoked
+    - Stay alive as long as the method/constructor is executed
 
 * Static (class) variables:
     - belong to classes

@@ -45,7 +45,19 @@ public class StringManipulations {
             // alternately: str.substring(i, i+1).equals("e")
         }
 
+        //Count words in string
+        int count_word = 0;
+        String str7 = "abhi hi pqhiih";
+        for(int i = 1; i < str7.length(); i++){
+            if(str.substring(i-1,i+1).equals("hi")){
+                count_word++;
+            }
+        }
+
         // Uppercase
         System.out.println("abcd".toUpperCase());
+
+
+
     }
 }

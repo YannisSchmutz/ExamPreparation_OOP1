@@ -1,6 +1,6 @@
 
 
-* The STATIC type of an object variable (reference) is declared type of the object variable. ▶
+* The STATIC type of an object variable (reference) is declared type of the object variable.
     - The static type is known at compile-time by the compiler.
     - It is static, because it does cannot change.
     - E.g:
@@ -13,7 +13,7 @@
         anAccount = new SavingsAccount();  // Initialized as BankAccount before...
 
 * Whether a method can be invoked is determined by the static type!
-
+* But the dynamic type methods are called
 
 
 * From a FINAL class can't be inherited.
